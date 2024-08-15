@@ -122,15 +122,9 @@ kept in the `application-prod.yml` file.
 ### User credentials
 
 Before getting started, it's important to note that an IAM user, who's credentials will be used,
-needs to be created with the following policies:
-
-- AmazonS3FullAccess
-- AWSLambda_FullAccess
-- AmazonDynamoDBFullAccess
-- AmazonSNSFullAccess
-- AmazonSQSFullAccess
-- AWSLambdaExecute
-- AmazonS3ObjectLambdaExecutionRolePolicy
+needs to be created with the `AdministratorAccess` policy. Of course, working in a company will have more restrictive and fine-grained
+permissions defined, for allowing the creation/update of each individual resource. In this case, we will choose an umbrella policy, that
+covers all our needs.
 
 For simplicity, we chose to use full access to all the services, so we don't have to add new permissions later on.
 We will be using the user's credentials and export them as temporary environment variables with the
