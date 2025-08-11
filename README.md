@@ -18,7 +18,7 @@ This sample demonstrates a full-stack shipment management application that showc
 
 The following diagram shows the architecture that this sample application builds and deploys:
 
-![Architecture Diagram](app_diagram.png)
+![Architecture Diagram](sample-pictures/architecture.png)
 
 -   [S3](https://docs.localstack.cloud/aws/services/s3/) for storing shipment pictures and Lambda deployment packages.
 -   [Lambda](https://docs.localstack.cloud/aws/services/lambda/) function that validates uploaded pictures, applies watermarks, and replaces non-compliant files.
